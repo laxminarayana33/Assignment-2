@@ -1,0 +1,46 @@
+.navbar{
+    background-image: url('./images/bg-2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+    padding: 2rem;
+}
+.menu_list{
+    list-style-type: none;
+    padding-left: 30%;
+}
+.menu_item{
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 2rem;
+}
+.main_section{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.buylist{
+    padding: 30px;
+    color: rgb(255, 106, 0);
+    text-align: center;
+    align-items: center;
+}
+.boughtlist{
+    padding: 30px;
+    color: rgb(255, 106, 0);
+    text-align: center;
+    align-items: center;
+}
+.table{
+    padding-left: 10px;
+    border: 2px solid;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+td{
+    padding: 15px;
+    margin-left: 10px;
+}
