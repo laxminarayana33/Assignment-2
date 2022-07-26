@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocaries Buy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div class="buyList" ng-controller="buyCtrl">
+        <h3>Buy List</h3>
+        <p ng-repeat="item in buyItems">
+            {{item.name}}:{{item.quantity}}
+            <button type="submit" ng-click="buy(item)"> Buy</button>
+        </p>
+
+        <br>
+        <br>
+        <h3>Bought List</h3>
+        <p>{{message}}</p>
+        <p ng-repeat="boughtitem in boughtList">
+            {{boughtitem.name}}:{{boughtitem.quantity}}
+        </p>
+    
+    </div>
+    <script src="Home.js"></script>
+</body>
+</html>
