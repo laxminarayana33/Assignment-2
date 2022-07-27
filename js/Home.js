@@ -1,24 +1,38 @@
 var app = angular.module('myApp', [])
 app.controller('buyCtrl', function ($scope) {
-  $scope.boughtList = []
-
+  $scope.boughtList = [];
+  $scope.message = '';
   $scope.buyItems = [
-    { id: '1', name: 'cokkies', quantity: 10 },
-    { id: '2', name: 'cooldriks', quantity: 5 },
-    { id: '3', name: 'meet', quantity: 4 },
-    { id: '4', name: 'biscuties', quantity: 8 },
-    { id: '5', name: 'black barbon', quantity: 10 },
-    { id: '6', name: 'good day', quantity: 20 },
+    { id: '1', name: 'Cokkies', quantity: "5 Packets"},
+    { id: '2', name: 'Milk', quantity: "2 Packets" },
+    { id: '3', name: 'Meat', quantity: "2 Kgs" },
+    { id: '4', name: 'Eggs', quantity: "1 Dozan" },
+    { id: '5', name: 'Rice', quantity: '1 Bag' },
+    { id: '6', name: 'Fruites', quantity: '3 Apples, 3 Oranges' },
+    { id: '7', name: 'Chocolates', quantity: 2 },
+    { id: '8', name: 'Oil', quantity: '2 Liters' },
+    { id: '9', name: 'Snaks', quantity: " Any 5 Items" },
+    { id: '10', name: 'Vegitables', quantity: ' Any 5 Items' },
   ]
-  $scope.message = ''
+  var message1='';
 
-  // if(boughtList.length = 0)$scope.message = 'You did not bought anything yet'
+  // if($scope.boughtList.length = 0)$scope.message = 'You did not bought anything yet'  
 
   $scope.buy = function (item) {
     if (item) {
       $scope.boughtList.push({ id: item.id, name: item.name, quantity: item.quantity})
       $scope.buyItems.splice($scope.buyItems.indexOf(item), 1)
     }
+
+    // $scope.boughtSize = $scope.boughtList.length;
+    // console.log($scope.boughtSize)
+    // if($scope.boughtSize == 0)$scope.message='You did not bought any thing yet';
+    // console.log($scope.message);
+
+   
+    // $scope.buySize = $scope.buyItems.length;
+    // if($scope.buySize == 0)$scope.message1 = 'you bougth everything'
+    // console.log(message1)
 
   }
 })

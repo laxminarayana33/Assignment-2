@@ -16,12 +16,11 @@
     margin: 2rem;
 }
 .main_section{
+    background-image: url(../images/bg-2.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    /* height: 100%; */
 }
-
-
-
 .buylist{
     padding: 30px;
     color: rgb(255, 106, 0);
@@ -34,13 +33,23 @@
     text-align: center;
     align-items: center;
 }
+.card{
+    opacity: 0.8;
+    border-radius: 40px;
+}
 .table{
-    padding-left: 10px;
-    border: 2px solid;
+    padding: 5px;
+    /* padding-left: 10px;
+    border: 2px solid; */
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(8, 8, 8);
+    font-weight: 600;
 }
 td{
     padding: 15px;
     margin-left: 10px;
+}
+.message{
+    font-weight: 500;
+    color: rgb(224, 147, 47);
 }
